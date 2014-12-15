@@ -33,6 +33,10 @@ module.exports = {
 			return this.authors[author].image;
 		},
 
+		getAuthorGooglePlus: function(author) {
+			return "https://plus.google.com/" + this.authors[author].gplus + "/";
+		},
+
 		getAuthorTwitter: function(author) {
 			return "https://twitter.com/" + this.authors[author].twitter;
 		},
