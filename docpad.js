@@ -52,6 +52,13 @@ module.exports = {
 			return "" + this.site.title;
 		},
 
+		getDescription: function() {
+			if(this.document.description)
+				return this.document.description;
+
+			return this.site.description;
+		}
+
 		/* Development Environment
 		===================================================================== */
 		environments: {
