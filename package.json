@@ -1,15 +1,13 @@
 {
-    "private": true,
-    "dependencies": {
-
-    },
-    "devDependencies": {
-
-    },
-    "scripts": {
-        "build": "docpad generate --env static",
-        "deploy": "docpad deploy-ghpages --env static",
-        "test": "docpad generate --silent",
-        "watch": "docpad run --silent"
-    }
+  "private": true,
+  "dependencies": {
+    "docpad": "^6.69.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "docpad generate --env static",
+    "deploy": "docpad deploy-ghpages --env static",
+    "test": "docpad generate --silent",
+    "watch": "docpad run --silent"
+  }
 }
