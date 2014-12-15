@@ -6,7 +6,7 @@ module.exports = {
 		authors: require("./authors.js"),
 
 		site: {
-			title: "",
+			title: "DevsNorte",
 			description: "Um lugar para discutir sobre as melhores práticas de desenvolvimento",
 			url: "http://devsnorte.com.br",
 			image: "http://devsnorte.com.br/images/logo.png"
@@ -91,7 +91,10 @@ module.exports = {
 		/* Plugins Configurations
 		===================================================================== */
 		plugins: {
-
+			grunt: {
+				writeAfter: false,
+				generateAfter: ["cssmin"]
+			}
 		}
 	}
 }
