@@ -57,7 +57,14 @@ module.exports = {
 				return this.document.description;
 
 			return this.site.description;
-		}
+		},
+
+		getImage: function() {
+			if(this.document.image)
+				return "" + this.site.url + "/images/stories/" + this.document.image;
+
+			return this.site.image;
+		},
 
 		/* Development Environment
 		===================================================================== */
