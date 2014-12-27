@@ -1,0 +1,60 @@
+@import "normalize";
+
+body {
+    font: 16px/1.6 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #333;
+    background-color: #fff;
+    min-width: 1020px;
+
+    .wrapper {
+
+        @import "components/pagination";
+
+        .container {
+            width: 980px;
+            margin: 0 auto;
+
+            &:before {
+                display: table;
+                content: "";
+            }
+
+            &:after {
+                display: table;
+                clear: both;
+                content: "";
+            }
+
+            @import "partials/header";
+
+            #blog-main {
+                margin-bottom: 6em;
+
+                .blog-aside {
+                    float: right;
+                    width: 200px;
+                }
+
+                .blog-content {
+                    width: 685px;
+                    font-family: "Helvetica Neue", Helvetica, Arial, freesans, sans-serif;
+                    float: left;
+                    color: #444;
+                    word-wrap: break-word;
+
+                    @import "partials/content";
+                }
+            }
+        }
+
+        .pagehead {
+            position: relative;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        @import "partials/footer";
+    }
+}

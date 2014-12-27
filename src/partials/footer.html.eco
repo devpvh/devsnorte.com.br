@@ -1,0 +1,18 @@
+                </div><!-- /blog-content -->
+
+                <div class="blog-aside">
+                    <%- @partial('sidebar') %>
+                </div>
+
+                </div><!-- /blog-main -->
+            </div><!-- /container -->
+
+            <footer class="container">
+                footer
+            </footer>
+        </div> <!-- /wrapper -->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="/js/scripts.js"></script>
+</body>
+</html>

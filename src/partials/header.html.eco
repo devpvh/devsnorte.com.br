@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= @getTitle() %></title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- for Google -->
+    <meta name="author" content="<%= @getAuthor() %>">
+    <meta name="description" content="<%= @getDescription() %>">
+    <meta name="theme-color" content="">
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="<%= @getTitle() %>">
+    <meta property="og:image" content="<%= @getImage() %>">
+    <meta property="og:url" content="<%= @site.url %><%= @document.url %>">
+    <meta property="og:description" content="<%= @getDescription() %>">
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= @getTitle() %>">
+    <meta name="twitter:description" content="<%= @getDescription() %>">
+    <meta name="twitter:image" content="<%= @getImage() %>">
+    <meta name="twitter:site" content="@devsnorte">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.png">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="pagehead">
+            <div class="container">
+                <h1>
+                    <a href="<%= @site.url %>"><%= @document.title %></a>
+                </h1>
+
+                <div class="blog-search">
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="blog-main">
+
+                <div class="blog-content">
