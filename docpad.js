@@ -28,7 +28,7 @@ module.exports = {
 
 		getAuthorImage: function(author) {
 			if(this.authors[author].gravatar)
-				return "https://2.gravatar.com/avatar/" + this.authors[authors].gravatar;
+				return "https://2.gravatar.com/avatar/" + this.authors[author].gravatar;
 
 			return this.authors[author].image;
 		},
