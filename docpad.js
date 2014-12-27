@@ -93,7 +93,7 @@ module.exports = {
 		plugins: {
 			grunt: {
 				writeAfter: false,
-				generateAfter: ["cssmin"]
+				generateAfter: ["default"]
 			}
 		}
 	}
