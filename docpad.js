@@ -51,7 +51,7 @@ module.exports = {
 
 		getTitle: function() {
 			if(this.document.title)
-				return "" + this.document.title + "&mdash;" + this.site.title;
+				return "" + this.document.title + " — " + this.site.title;
 
 			return "" + this.site.title;
 		},
