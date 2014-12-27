@@ -1,16 +1,18 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        cssmin: {
-            minify: {
-                expand: true,
-                cwd: 'src/files/css/',
-                src: ['*.css', '!*.min.css'],
-                dest: 'out/css/',
-                ext: '.min.css'
+        less: {
+            options: {
+                paths: ["out/css/"],
+                compress: true
+            },
+            src: {
+                files: {
+                    "out/css/styles.css": "src/files/less/styles.less"
+                }
             }
         }
     });
 
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('default', ['cssmin']);
+    grunt.registerTask('default', ['less']);
 }
