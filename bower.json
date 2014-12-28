@@ -1,0 +1,7 @@
+{
+  "name": "devsnorte",
+  "description": "A place to discuss the best development practices",
+  "dependencies": {
+    "octicons": "~2.1.2"
+  }
+}
