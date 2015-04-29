@@ -13,7 +13,7 @@ module.exports = {
 		},
 
 		github: {
-			user: "pvhjs",
+			user: "devpvh",
 			repo: "devsnorte.com.br"
 		},
 
